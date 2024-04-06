@@ -17,7 +17,7 @@ function Contact() {
           ></iframe>
         </div>
         <div className="contact-form">
-          <form action="https://script.google.com/macros/s/AKfycbyFJS8BRJ2skGwS04aaqs_A_V0x-D7xzstZe5L6yREqwwqObtQYKwJzg9esvQhcG1QO/exec" method="POST">
+          <form action="https://script.google.com/macros/s/AKfycby86HDC3JMpT-Lmbt88tss1IfJTmI_NXmU3SXarVfU63-zEMZJmBFIlrbm2lhB6U-cF/exec" method="POST">
             <input
               type="text"
               name="name"

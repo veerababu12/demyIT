@@ -14,7 +14,7 @@ import { faLaptop, faMobile, faMagic,faCode, faGraduationCap, faDesktop} from '@
 import Communicate from './components/Communicate/Communicate';
 import Contact from './components/Contact/Contact';
 
-import {AboutUsData,Services,Projects} from './data/Data';
+import {AboutUsData,Services,Projects,Faq} from './data/Data';
 import Footer from './components/Footer/Footer';
 import FooterData from './data/FooterData';
 import AccordionApp from './components/Accordion/AccodionApp';
@@ -22,23 +22,25 @@ import AccordionApp from './components/Accordion/AccodionApp';
 function App() {
   
   return (
-    <div>
-      <header className='container-fluid' >
-          <Navbar/>
+    <div className='body'>
+              
+              <Navbar/>
            <Hero/>
-         </header>
-
-         <AboutUsSection aboutUsData={AboutUsData} /> 
 
 
-         <OurServices aboutUsData={Services}/>
+<button/>
+         <AboutUsSection Data={AboutUsData} /> <br></br><br></br><br></br>
 
-          <div className="container">
+
+         <OurServices Data={Services}/>
+
+          <div className="container-fluid">
         <div className="row">
 
-          <Card icon={faLaptop} title="Web App Development" description="Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge." />
-          <Card icon={faMobile} title="Mobile App Development" description="We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms." />
-          <Card icon={faMagic} title="Digital Marketing" description="The digital marketing services that we provide have their own set of charms. By taking our digital marketing services, our clients will be able to increase visibility and engage with their customers at the online platform." />
+          <Card icon={faLaptop} title="Web App Development" description="Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge."         link="https://www.google.com" />
+
+          <Card icon={faMobile} title="Mobile App Development" description="We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms." link="https://www.google.com" />
+          <Card icon={faMagic} title="Digital Marketing" description="The digital marketing services that we provide have their own set of charms. By taking our digital marketing services, our clients will be able to increase visibility and engage with their customers at the online platform."  link="https://www.google.com" />
 
 
 
@@ -53,23 +55,27 @@ function App() {
       </div>
          </section>
       
-         <Project aboutUsData={Projects}/>
+         <Project Data={Projects}/>
           
 
 <div className="container">
         <div className="row">
-          <Card icon={faCode} title="Web App Development" description="Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge." />
-          <Card icon={faGraduationCap} title="Mobile App Development" description="We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms." />
-          <Card icon={faDesktop} title="Digital Marketing" description="The digital marketing services that we provide have their own set of charms. By taking our digital marketing services, our clients will be able to increase visibility and engage with their customers at the online platform." />
+          <Card icon={faCode} title="Web App Development" description="Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge."  link="https://www.google.com" />
+          <Card icon={faGraduationCap} title="Mobile App Development" description="We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms."  link="https://www.google.com" />
+          <Card icon={faDesktop} title="Digital Marketing" description="The digital marketing services that we provide have their own set of charms. By taking our digital marketing services, our clients will be able to increase visibility and engage with their customers at the online platform."  link="https://www.google.com" />
                  </div>
                  </div>
 
-          <AccordionApp/>
+<Project Data={Faq}/>
+<div style={{marginTop:"-150px"}}>
+<AccordionApp />
+
+</div>
 
          <Communicate/>
 
          <Contact/>
-         <Footer contactInfo={FooterData.contactInfo} usefulLinks={FooterData.usefulLinks} subscription={FooterData.subscription} />
+         <Footer contactInfo={FooterData.contactInfo} usefulLinks={FooterData.usefulLinks} subscription={FooterData.subscription} /> 
     </div>
     
   );

@@ -8,25 +8,23 @@ function RightNav() {
           <a className="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">About</a>
+          <a className="nav-link active" aria-current="page" href="#About">About</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Services</a>
+          <a className="nav-link active" aria-current="page" href="#Services">Services</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Portofoilo</a>
+          <a className="nav-link active" aria-current="page" href="#Projects">Portofoilo</a>
         </li>
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Team</a>
-        </li>
+      
         <li className="nav-item">
           <a className="nav-link active" aria-current="page" href="#">Career</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Contact</a>
+          <a className="nav-link" href="#contact">Contact</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">FaQ</a>
+          <a className="nav-link" href="#Faq">FaQ</a>
         </li>
        
       </ul>    </>

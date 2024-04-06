@@ -14,59 +14,87 @@ html{
     font-size: 62.5%;
 }
 
-body{
+.body{
     overflow-x: hidden;
 }
-
-nav {
-    width: 100vw;
+.nav {
+    width: 100%;
     background-color: #000;
- font-size: 15px;
- position: fixed;
- top: 0;
- left: 0;
- z-index: 100;
- position: fixed;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 
 
-.logo
-{
+.logo {
     width: 50px;
     border-radius: 300px;
     background-color: #000;
 }
- .navbar-brand 
- {
+
+.navbar-brand {
     justify-content: left;
     margin-left: 30px;
 }
 
-#navbarNav
-{
-justify-content: end;
-margin-right: 30px;
-}
- #navbarNav ul li a {
-    color: white;
-    margin: 0px 10px;
-}
-
-@media only screen and (max-width:1000px) 
-{
-    nav
-    {
-        height: auto;
-    }
+#navbarNav {
+    justify-content: flex-end;
     
 }
 
+#navbarNav ul {
+    list-style-type: none;
+   
+    margin-left: 500px;
+
 }
 
+#navbarNav ul li {
+    margin: 0 10px;
+}
 
-.OurServices
+#navbarNav ul li a {
+    color: white;
+    margin: 0px 10px;
+}
+button
 {
-    background-color: #DDDDDD;
+    text-align: end;
+    background-color: #00bfff;
 }
+@media only screen and (max-width: 1000px) {
+    .nav {
+      height: auto;
+      width: 160%;
+    }
+    nav
+    {
+        width:100vw;
+    }
+  
+    .navbar-brand,
+    #navbarNav {
+      justify-content: center;
+      margin: 10px 0;
+      width: auto;
+    }
+  
+    #navbarNav ul {
+      display: flex;
+      justify-content: flex-end; /* Retain flex-end alignment */
+      margin-left: 0px;
+
+      width: auto;
+    }
+  
+    #navbarNav ul li {
+      margin: 10px 10px;
+      text-align: center;
+    }
+  }
+  
 
 .heading, .clients .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4{
     margin: 2rem;
@@ -145,6 +173,19 @@ margin-right: 30px;
     background: #00bfff;
 }
 
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    position: fixed;
+}
+
 .header .logo img{
     width: 130%;
     height: 3rem;
@@ -215,7 +256,7 @@ margin-right: 30px;
     left: 0;
     height: 11rem;
     width: 100%;
-    background-image: url("C:\Users\vinuv\IT-Company-Website\images\wave.png");
+    background: url("C:\Users\vinuv\IT-Company-Website\images\wave.png");
     background-size: 100rem 11rem;
     animation: waves 8s linear infinite;
     background-repeat: repeat-x;
@@ -289,17 +330,14 @@ margin-right: 30px;
     text-align: center;
   }
   .item{
-    background:#fff;
     text-align: center;
-    padding:30px 25px;
     box-shadow: 0 0 25px rgba(0,0,0,0.07);
     border-radius: 20px;
     margin-bottom: 30px;
-    margin-top: -9rem;
+    margin-top: -90px;
     border:5px solid rgba(0,0,0,0.07);
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
-    height: 55vh;
   }
   .item:hover{
     background:#c8d8e4;
@@ -1116,7 +1154,8 @@ margin-right: 30px;
     }
 }        
 
-@media (max-width: 1000px){
+@media (max-width: 1000px)
+{
     html{
         font-size: 50%;
     }
@@ -1392,4 +1431,16 @@ margin-right: 30px;
         .faq .row .accordion-container{
             width: 100%;
         }
+        .item
+        {
+            margin-top: -10px;
+            transform: scale(0.9);
+            height: 50vh;
+        }
+
+       .heading
+       {
+        margin-top: 100px;
+       }
+       
 }
